@@ -3,11 +3,11 @@
 a:hover{cursor: crosshair;}
 a:active{color: seagreen}
 a:visited{color: teal;}
-#opis{width: 50%; border: 3px dashed darkgray; align-self: right}
+#opis{overflow: auto; border: 3px dashed darkgray; }
 #flaga{ width:150px; height: 100px; caption-side: top;}
 .bialy{background-color: white; border-width: 0px;}
 .czerwony{background-color: red; border-width: 0px;}
 body{background-color: lightgrey;}
 .obok_siebie{display: flex}
-.rok{border: 10px inset forestgreen;}
-.informacja{border: 10px dashed black;}
+.rok{border: 2px dashed forestgreen;}
+.informacja{border: 1px dashed black;}
