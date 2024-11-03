@@ -1,5 +1,5 @@
 #tytul{
-    color: #577146 ;
+    color: #607D72  ;
 }
 ul {
     list-style-type: none;
@@ -27,4 +27,13 @@ li a:hover:not(.active) {
   
 .active {
     background-color: #04AA6D;
+}
+
+body {
+    background-color: #DAE6D3  ;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
 }
