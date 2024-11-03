@@ -7,18 +7,46 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Strona Główna</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="ankieta.html">Ankieta</a></li>
-      </ul>
-    <div class="gallery">
-        <div class="flex-container">
-        <div><img src="photos/clyde.jpg" title="Rzeka Clyde"></div>
-        <div><img src="photos/katedra.jpg" title="Katedra w Glasgow"></div>
-        <div><img src="photos/necropolis.jpg" title="Cmentarz w Glasgow"></div>
-        <div><img src="photos/GOMA.jpg" title="Galeria Sztuki Nowoczesnej"></div>
+    <ul class="menu">
+        <li class="menu_pola"><a href="index.html">Strona Główna</a></li>
+        <li class="menu_pola"><a href="galeria.html">Galeria</a></li>
+        <li class="menu_pola"><a href="ankieta.html">Ankieta</a></li>
+    </ul>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="photos/clyde.jpg">
+            <img src="photos/clyde.jpg" alt="Rzeka Clyde">
+          </a>
+          <div class="desc">Rzeka Clyde</div>
         </div>
-    </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="photos/GOMA.jpg">
+            <img src="photos/GOMA.jpg" alt="Galeria Sztuki Nowoczesnej w Glasgow">
+          </a>
+          <div class="desc">Galeria Sztuki Nowoczesnej w Glasgow</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="photos/katedra.jpg">
+            <img src="photos/katedra.jpg" alt="Katedra w Glasgow">
+          </a>
+          <div class="desc">Katedra w Glasgow</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="photos/necropolis.jpg">
+            <img src="photos/necropolis.jpg" alt="Cmentarz w Glasgow">
+          </a>
+          <div class="desc">Cmentarz w Glasgow</div>
+        </div>
+      </div>
+      <div class="clearfix"></div> 
 </body>
 </html>

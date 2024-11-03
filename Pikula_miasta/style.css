@@ -1,15 +1,20 @@
 #tytul{
     color: #607D72  ;
 }
-ul {
+
+.sekcja{
+    color: #449375;
+}
+
+.menu{
+    background-color: #333;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
 }
-  
-li {
+
+.menu_pola{
     float: left;
 }
   
@@ -33,7 +38,53 @@ body {
     background-color: #DAE6D3  ;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-}
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  table{
+    border: #607D72 dashed 2px;
+  }
