@@ -1,0 +1,210 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+    height: 15%;
+    color: green;
+    background-color: aqua;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    animation: logo 5s infinite;
+    font-size: xx-large;
+}
+
+@keyframes logo {
+    0%{
+        transform: rotate(25deg);
+    }    
+    50%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(25deg);
+    }
+}
+
+nav{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    float: left;
+    padding: 10px 0px;
+    height: 8%;
+}
+
+main{
+    width: 100%;
+    height: 81%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+section{
+    width: 100%;
+    float: left;
+    padding: 3% 3%;
+}
+
+footer{
+    width: 100%;
+    height: 4%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 5%;
+}
+
+p{
+    margin: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    opacity: 70%;
+    margin-bottom: 15px;
+}
+th, td {
+    border: none;
+    padding: 15px;
+    text-align: left;
+}
+td{
+    font-size: 20px;
+}
+th {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td:hover, th:hover{
+    background-color: #808080;
+}
+
+a{
+    color: purple;
+    text-decoration: none;
+}
+
+.button{
+    background-color: #62529c;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    width: 80%;
+    height: 90%;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button a{
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    nav{
+        flex-direction: column;
+        width: 30%;
+        gap: 10px;
+        height: 100%;
+    }
+
+    main{
+        flex-direction: row;
+    }
+
+    .button{
+        all: unset;
+        background-color: #62529c;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 90%;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header{
+        height: 250px;
+    }
+
+    nav{
+        flex-direction: column;
+        width: 100%;
+        height: 570px
+    }
+
+    main{
+        flex-direction: column;
+        height: unset;
+    }
+
+    .button{
+        all: unset;
+        background-color: #62529c;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        width: 90%;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    section{
+        padding: 15px 5%;
+        height: unset;
+        width: 100%;
+        
+    }
+
+    *{
+        font-size: 20px;
+    }
+
+    footer{
+        height: 40px;
+    }
+    body{
+        height: unset;
+    };
+}
